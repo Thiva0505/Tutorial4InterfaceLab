@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- HOME: menu that opens the four Tutorial 04 apps -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Neon light blobs in the background -->
+    <View
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="-120dp"
+        android:layout_marginEnd="-140dp"
+        android:background="@drawable/glow_mobile" />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="-170dp"
+        android:background="@drawable/glow_dataset" />
+
+    <View
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-150dp"
+        android:layout_marginBottom="-120dp"
+        android:background="@drawable/glow_price" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="22dp"
+            android:paddingTop="36dp"
+            android:paddingEnd="22dp"
+            android:paddingBottom="32dp">
+
+            <TextView
+                style="@style/Text.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TK1143 · Tutorial 04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="false"
+                android:letterSpacing="-0.03"
+                android:lineSpacingMultiplier="0.9"
+                android:text="Interface\nLab."
+                android:textColor="@color/text_primary"
+                android:textSize="54sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:lineSpacingExtra="4dp"
+                android:text="Four apps, one idea: an interface is a contract, and every class that signs it must keep its promise."
+                android:textColor="@color/text_secondary"
+                android:textSize="15sp" />
+
+            <!-- Code ribbon -->
+            <TextView
+                style="@style/Text.Code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="class X implements Contract { … }" />
+
+            <TextView
+                style="@style/Text.Overline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Choose an app" />
+
+            <!-- 01 DataSet -->
+            <LinearLayout
+                android:id="@+id/cardDataSet"
+                style="@style/MenuCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_dataset">
+
+                <TextView
+                    style="@style/Text.MenuBadge"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_badge_dataset"
+                    android:text="01" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.MenuTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DataSet" />
+
+                    <TextView
+                        style="@style/Text.MenuSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Average and highest of anything measurable" />
+
+                    <TextView
+                        style="@style/Text.MenuChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_chip_dataset"
+                        android:text="implements Measurable"
+                        android:textColor="@color/dataset_accent" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Text.Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→" />
+            </LinearLayout>
+
+            <!-- 02 Edible -->
+            <LinearLayout
+                android:id="@+id/cardEdible"
+                style="@style/MenuCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_edible">
+
+                <TextView
+                    style="@style/Text.MenuBadge"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_badge_edible"
+                    android:text="02" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.MenuTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edible" />
+
+                    <TextView
+                        style="@style/Text.MenuSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Who is eating what, and how" />
+
+                    <TextView
+                        style="@style/Text.MenuChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_chip_edible"
+                        android:text="implements Edible"
+                        android:textColor="@color/edible_accent" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Text.Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→" />
+            </LinearLayout>
+
+            <!-- 03 Mobile -->
+            <LinearLayout
+                android:id="@+id/cardMobile"
+                style="@style/MenuCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_mobile">
+
+                <TextView
+                    style="@style/Text.MenuBadge"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_badge_mobile"
+                    android:text="03" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.MenuTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile" />
+
+                    <TextView
+                        style="@style/Text.MenuSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Build a phone and tune its FM radio" />
+
+                    <TextView
+                        style="@style/Text.MenuChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_chip_mobile"
+                        android:text="implements RadioTuner"
+                        android:textColor="@color/mobile_accent" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Text.Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→" />
+            </LinearLayout>
+
+            <!-- 04 Price -->
+            <LinearLayout
+                android:id="@+id/cardPrice"
+                style="@style/MenuCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_menu_price">
+
+                <TextView
+                    style="@style/Text.MenuBadge"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:background="@drawable/bg_badge_price"
+                    android:text="04" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/Text.MenuTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price" />
+
+                    <TextView
+                        style="@style/Text.MenuSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Can this customer afford it?" />
+
+                    <TextView
+                        style="@style/Text.MenuChip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_chip_price"
+                        android:text="implements Price"
+                        android:textColor="@color/price_accent" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Text.Arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="→" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:minHeight="28dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Thivanesh Renga  ·  A223287  ·  UKM"
+                android:textColor="@color/text_muted"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

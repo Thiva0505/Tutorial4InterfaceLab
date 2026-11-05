@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base: deep midnight -->
+    <color name="bg_deep">#FF070A14</color>
+    <color name="bg_mid">#FF12133A</color>
+    <color name="glass">#14FFFFFF</color>
+    <color name="glass_stroke">#26FFFFFF</color>
+    <color name="glass_strong">#22FFFFFF</color>
+    <color name="text_primary">#FFF5F7FF</color>
+    <color name="text_secondary">#FFA3ABCF</color>
+    <color name="text_muted">#FF646D96</color>
+    <color name="code_bg">#38000000</color>
+
+    <!-- 01 DataSet: aqua -->
+    <color name="dataset_accent">#FF2EF2D0</color>
+    <color name="dataset_start">#FF00BFA6</color>
+    <color name="dataset_end">#FF0E4F8C</color>
+    <color name="dataset_soft">#3D2EF2D0</color>
+    <color name="dataset_glow">#662EF2D0</color>
+
+    <!-- 02 Edible: coral -->
+    <color name="edible_accent">#FFFF8A5B</color>
+    <color name="edible_start">#FFFF6A3D</color>
+    <color name="edible_end">#FFC2255C</color>
+    <color name="edible_soft">#3DFF8A5B</color>
+    <color name="edible_glow">#66FF6A3D</color>
+
+    <!-- 03 Mobile: violet -->
+    <color name="mobile_accent">#FFB197FC</color>
+    <color name="mobile_start">#FF7C3AED</color>
+    <color name="mobile_end">#FF1D4ED8</color>
+    <color name="mobile_soft">#3DB197FC</color>
+    <color name="mobile_glow">#667C3AED</color>
+    <color name="lcd_bg">#FF0B0820</color>
+    <color name="lcd_text">#FFD6CCFF</color>
+
+    <!-- 04 Price: gold -->
+    <color name="price_accent">#FFFFC94D</color>
+    <color name="price_start">#FFF59E0B</color>
+    <color name="price_end">#FFB4231B</color>
+    <color name="price_soft">#3DFFC94D</color>
+    <color name="price_glow">#66F59E0B</color>
+
+    <!-- Verdicts -->
+    <color name="success">#FF34D399</color>
+    <color name="success_soft">#2634D399</color>
+    <color name="danger">#FFFB7185</color>
+    <color name="danger_soft">#26FB7185</color>
+</resources>
